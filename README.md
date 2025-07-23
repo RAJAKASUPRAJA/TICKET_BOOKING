@@ -5,13 +5,13 @@ This is a Flask web app for booking bus tickets using SQLite as the backend and 
 ##  Screenshots
 
 ### Homepage
-![Home](screenshots/home.png)
+![Home](home.png)
 
 ### Booking Page
-![Booking](screenshots/booking.png)
+![Booking](booking.png)
 
 ### Confirmation Page
-![Confirmation](screenshots/confirmation.png)
+![Confirmation](confirmation.png)
 
 ## 🚀 Features
 
