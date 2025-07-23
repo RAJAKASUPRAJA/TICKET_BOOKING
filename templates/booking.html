@@ -1,0 +1,48 @@
+
+{% extends "layout.html" %}
+{% block title %}Book Ticket{% endblock %}
+{% block body_class %}booking-page{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-8">
+      <div class="card bg-light bg-opacity-75 shadow-lg p-4">
+        <h3 class="mb-4 text-center">Ticket Booking</h3>
+
+        <form method="POST" id="bookingForm">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input name="name" type="text" class="form-control" required />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input name="email" type="email" class="form-control" required />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">From</label>
+            <input name="origin" id="origin" type="text" class="form-control" required />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">To</label>
+            <input name="destination" id="destination" type="text" class="form-control" required />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Fare (₹)</label>
+            <input name="amount" id="amount" class="form-control" readonly />
+          </div>
+
+          <button type="submit" class="btn btn-success w-100">
+            Confirm Booking
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

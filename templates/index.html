@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block body_class %}index-page{% endblock %}
+
+{% block content %}
+<div class="container py-5 text-center">
+  <h1 class="display-4 fw-bold mb-4 text-light shadow-text">Welcome to EasyTicket</h1>
+  <a class="btn btn-lg btn-warning shadow" href="{{ url_for('booking') }}">Book Now</a>
+</div>
+{% endblock %}

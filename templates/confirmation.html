@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block title %}Confirmation{% endblock %}
+{% block body_class %}confirm-page{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-8">
+      <div class="card bg-light bg-opacity-75 shadow-lg p-4">
+        <h3 class="mb-4 text-center">Booking Confirmed!</h3>
+        <ul class="list-group mb-4">
+          <li class="list-group-item"><strong>ID:</strong> {{ booking[0] }}</li>
+          <li class="list-group-item"><strong>Name:</strong> {{ booking[1] }}</li>
+          <li class="list-group-item"><strong>Email:</strong> {{ booking[2] }}</li>
+          <li class="list-group-item"><strong>From:</strong> {{ booking[3] }}</li>
+          <li class="list-group-item"><strong>To:</strong> {{ booking[4] }}</li>
+          <li class="list-group-item"><strong>Amount:</strong> ₹{{ booking[5] }}</li>
+          <li class="list-group-item"><strong>Date & Time:</strong> {{ booking[6] }}</li>
+        </ul>
+        <a class="btn btn-primary w-100" href="{{ url_for('download', booking_id=booking[0]) }}">
+          Download Ticket PDF
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

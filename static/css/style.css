@@ -1,0 +1,15 @@
+/* Make the image cover the full viewport */
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* Page‑specific backgrounds */
+.index-page  { background-image: url("../images/index_bg.jpg");   }
+.booking-page{ background-image: url("../images/booking_bg.jpg"); }
+.confirm-page{ background-image: url("../images/confirm_bg.jpg"); }
+
+/* Optional outline for hero text */
+.shadow-text { text-shadow: 0 0 8px rgba(0,0,0,.9); }
